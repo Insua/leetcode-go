@@ -2,8 +2,6 @@ package main
 
 import "fmt"
 
-var count = 0
-
 func lengthOfLongestSubstring(s string) int {
 	if len(s) < 2 {
 		return len(s)
@@ -33,7 +31,6 @@ func lengthOfLongestSubstring(s string) int {
 }
 
 func isDuplicate(s string) bool {
-	count++
 	m := make(map[int32]uint8)
 	for _, v := range s {
 		m[v] = 1
